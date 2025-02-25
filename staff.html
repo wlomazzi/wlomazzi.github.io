@@ -1,0 +1,56 @@
+<!--
+* @name: Assignement1
+* @Course Code: SODV1201 - 
+* @class: Software Development Diploma program.
+* @author: Wesley Lomazzi e Souza  / email: w.lomazziesouza407@mybvc.ca
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Information</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="content" id="content">
+    <header>
+      <div class="menu">
+        <div class="menu-item">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="menu-item">
+          <a href="grade.html">Mark to Grade</a>
+        </div>
+        <div class="menu-item">
+          <a href="staff.html">Staff</a>
+        </div>
+        <div class="menu-item">
+          <a href="weather.html">Weather</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="section-staff">
+      <h2>Staff Information</h2>
+      <!-- The staff table will be inserted here -->
+      <div id="staffList"></div>
+    </div>
+
+    <footer id="footer"></footer>
+    <script src="script.js"></script>
+  </div>
+  
+  <!-- Link to the functions file -->
+  <script src="functions.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Display the initial staff list when the page loads
+      // Load the function displayStaffList function - Check the function displayStaffList on functions.js file
+      displayStaffList();
+    });
+  </script>
+</body>
+</html>

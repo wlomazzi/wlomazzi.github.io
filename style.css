@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f3f3f3;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0077b5;
+    color: white;
+    padding: 1px;
+    text-align: center;
+}
+
+
+.menu {
+    margin-top: 1px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1px;
+}
+
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    background-color: #024c74;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item a:hover {
+    background-color: #005f8d;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item a:active {
+    background-color: #004a70;
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.content {
+    margin-left: 0px;
+    flex: 1;
+    padding: 0px;
+    transition: margin-left 0.3s;
+}
+
+.picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.picture img {
+    width: 410px;
+    height: 390px;
+    border-radius: 5%;
+    border: 5px solid #0077b5;
+}
+
+
+/* Estilo geral da seção */
+.section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Título */
+  .section h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Label */
+  .section label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  /* Campo de texto */
+  .section input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .section input[type="text"]:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: none;
+  }
+  
+  /* Botão */
+  .section button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .section button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+  }
+  
+  .section button:active {
+    transform: translateY(0);
+  }
+  
+  /* Resultado */
+  #result {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+  }
+
+
+/* Style for the result BOX */
+.result-box {
+    display: inline-block;
+    background: #f9f9f9;           /* Background */
+    border: 2px solid #4CAF50;     /* Border color */
+    border-radius: 8px;              /* Border radius */
+    padding: 30px;                   /* Internal space */
+    margin: 10px;                    /* Space betweem Squares */
+    width: 200px;                    /* Square width */
+    height: 100px;                   /* Square height */
+    text-align: center;              /* Square text centralized */
+    font-size: 1.4rem;               /* Square text size */
+    color: #333; 
+    font-display: block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra discreta */
+    line-height: 1.5;
+  }
+  
+  /* Optional: Box style for reproved grade, less than 50 or F*/
+  .result-box.reproved {
+    width: 200px; 
+    height: 100px;
+    border-color: #f44336;
+    color: #f44336;
+    background: #ffe6e6;
+  }
+
+
+  /* Box style for error messages - Display a red box to the user */
+  .result-box.error {
+    width: 200px; 
+    height: 100px;
+    border-color: #f44336;
+    color: #f44336;
+    background: #ffe6e6;
+  }
+
+
+/* Staff table styling ------------------------------------------------------------------------------------------------------------------------------------------------*/
+.staff-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .staff-table th,
+  .staff-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .staff-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .staff-table th.clickable {
+    cursor: pointer;
+  }
+  
+  .staff-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .staff-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Styling for the delete button on the Staff table*/
+  .delete-btn {
+    background-color: #b32313;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+ 
+  .delete-btn:hover {
+    background-color: #f72a06;
+  }
+  
+
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    position: fixed;
+    bottom: 0px;
+    background-color: #0077b5;
+    color: white;
+    padding: 1.2rem;
+    justify-content: center;
+}

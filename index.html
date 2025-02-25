@@ -1,95 +1,62 @@
+<!--
+* @name: Assignement1
+* @Course Code: SODV1201 - 
+* @class: Software Development Diploma program.
+* @author: Wesley Lomazzi e Souza  / email: w.lomazziesouza407@mybvc.ca
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wesley Lomazzi - Home Page</title>
-    <link rel="stylesheet" href="home.css">
+    <title>Wesley Lomazzi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="content" id="content">
-        <!--
-        <div class="page-top"  id="pageTop">
-            <header>
-                <h1></h1>
-            </header>
-        </div>
-        -->
-        <!-- Sidebar Menu -->
-        <div class="side-menu" id="sideMenu">
-            <p>
-            <h2>My Social<p>Media</h2><br><br>
-                <a href="https://www.linkedin.com/in/wlomazzi" target="_blank">
-                    <img src="linkedin.png" alt="Facebook"> LinkedIn
-                </a>
-                <a href="https://www.facebook.com/wlomazzi" target="_blank">
-                    <img src="facebook.png" alt="Facebook"> Facebook
-                </a>
-                <a href="https://www.instagram.com/wlomazzi" target="_blank">
-                    <img src="instagram.png" alt="Facebook"> Instagram
-                </a>
-                <a href="https://www.tiktok.com/@wlomazzi" target="_blank">
-                    <img src="tiktok.png" alt="Facebook"> Tiktok
-                </a>
-                <a href="https://x.com/wlomazzi" target="_blank">
-                    <img src="xtwitter.png" alt="Facebook"> X-twitter
-                </a>
-        </div>
-    
-
-        <div class="menu">
-            <div class="menu-item">
-                <a href="resume.html">Resume Page</a>
+        <header>
+            <div class="menu">
+                <div class="menu-item">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="menu-item">
+                    <a href="grade.html">Mark to Grade</a>
+                </div>
+                <div class="menu-item">
+                    <a href="staff.html">Staff</a>
+                </div>
+                <div class="menu-item">
+                    <a href="weather.html">Weather</a>
+                </div>
             </div>
-            <div class="menu-item">
-                <a href="hobby.html">My Hobbies/Interest Page</a>
-            </div>
-        </div>
+        </header>
 
-        <div class="profile">
-            <img src="profile-picture.jpg" alt="Profile Picture">
-            <h1>Wesley Lomazzi</h1>
-            <p>IT Specialist | Calgary / AB</p>
+        <div class="picture">
+            <h2>Wesley Lomazzi</h2>
+            <!-- id = "image_name " 
+             The name of the image will be displayed here, after the function is called in the script.js file
+             setTimeout(function() 
+            -->
+            <p id="image_name"></p>            
+            <img src="profile-picture.jpg" alt="Wesley's profile picture" id="image">
         </div>
 
         <div class="section">
             <h2>About Me</h2>
             <p>
               I am a Solutions Architect with over 20 years of experience in IT, specializing in process automation (RPA), system architecture, and consulting. 
-              I have extensive expertise in business process automation and integrating platforms like Protheus/SAP and ServiceNow. My mission is to drive efficiency through innovative technology solutions.
+              I have extensive expertise in business process automation and integrating platforms like Protheus/SAP and ServiceNow. My mission is to drive efficiency 
+              hrough innovative technology solutions.
             </p>
-            <div class="section">
-                  <h2>My hobbies</h2>
-                  <p>
-                    Music, especially rock 'n' roll, holds a special place in my heart. The electrifying riffs and powerful lyrics of this genre inspire creativity and passion in everything I do. From iconic legends like Led Zeppelin and Pink Floyd to modern rock bands, the music fuels my energy and connects me to a broader community of enthusiasts who share a love for the raw, unfiltered emotion that rock 'n' roll embodies. Combined with my fascination for technology, I often find myself exploring innovations in music production, sound engineering, and gadgets that bridge the gap between art and science.
-                  </p>
-                  <p>
-                    My hobbies extend beyond music to include a wide variety of activities that keep me engaged and energized. I am an avid sports enthusiast, enjoying volleyball, soccer, tennis, basketball, and more. Staying active through sports not only boosts my physical well-being but also strengthens my ability to collaborate and maintain a competitive edge. Additionally, I have a deep appreciation for cinema, finding joy in exploring all kinds of movies, from heartwarming dramas to action-packed thrillers. These hobbies complement my professional pursuits, offering a balanced and fulfilling lifestyle.
-                  </p>
-                  <h3>Diverse hobbies</h3>
-                  <ul>
-                    <li><strong>Sports:</strong> Volley Ball, Soccer, Tennis, basket Ball and much more </li>
-                    <li><strong>Music:</strong> Rock n'roll </li>
-                    <li><strong>Movies:</strong> I love all kinds of movies </li>
-                  </ul>
-                  <h3>Technology hobbies</h3>
-                  <ul>
-                    <li><strong>AI:</strong> Artificial Inteligence</li>
-                    <li><strong>RPA Platforms:</strong> UIPath, Automation Anywhere, Protheus, ServiceNow</li>
-                    <li><strong>Programming Languages:</strong> JavaScript, Java, Python, VB Script</li>
-                    <li><strong>Database Management:</strong> Oracle, Microsoft SQL Server, MySQL/MariaDB</li>
-                    <li><strong>System Integration:</strong> RESTful APIs, SAP, ServiceNow</li>
-                  </ul>
-                </div>
-                <div class="footer">
-                  <p>&copy; 2024 Wesley Lomazzi. All Rights Reserved.</p>
-                </div>
+            <p>
+              Beyond my professional work, I am passionate about sports, technology, and personal development. I enjoy staying active through various sports activities, 
+              exploring the latest tech innovations, and continuously learning to improve myself both personally and professionally.
+            </p>
         </div>
-        <footer>
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-        </footer>
+
+        <footer id="footer"> </footer>
     </div>
 
-    <script src="home.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
